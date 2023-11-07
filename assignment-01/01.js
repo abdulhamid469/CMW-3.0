@@ -1,0 +1,10 @@
+var myName = 'Hamid';
+console.log("Hello " + myName);
+var quote = "Learn and apply";
+console.log(myName + ": \t" + quote);
+var numOne = 5;
+var numTwo = 3;
+console.log(numOne + numTwo);
+console.log(numOne - numTwo);
+console.log(numOne * numTwo);
+console.log(numOne / numTwo);
