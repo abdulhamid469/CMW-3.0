@@ -1,5 +1,17 @@
 {
   "devDependencies": {
+    "@types/node": "^20.9.0",
     "typescript": "^5.2.2"
-  }
+  },
+  "name": "cmw-3.0",
+  "description": "This is directory for Certified AI, Metaverse, and Web 3.0 Islamabad Batch 53",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
