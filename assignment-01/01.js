@@ -272,6 +272,10 @@ console.log(!fruits.includes('grape'));
  * • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
  * • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
  */
+var alien_color = "green";
+if (alien_color === "green") {
+    console.log("The player just earned 5 points.");
+}
 /**
  * Question 26
  * Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
@@ -279,6 +283,12 @@ console.log(!fruits.includes('grape'));
  * • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
  * • Write one version of this program that runs the if block and another that runs the else block.
  */
+if (alien_color === "green") {
+    console.log("The player just earned 5 points for shooting the alien.");
+}
+else {
+    console.log("The player just earned 10 points for shooting the alien.");
+}
 /**
  * Question 27
  * Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
