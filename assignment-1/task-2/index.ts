@@ -6,7 +6,6 @@
 const add = (a:number, b:number) => {
     return a + b;
 }
-
 console.log(add(5, 6));
 
 
@@ -16,15 +15,16 @@ console.log(add(5, 6));
     - The function should take an integer as a parameter and return a string indicating whether the number is even or odd.
  */
 
-const checkEvenOrOdd = (a:number, b:number): void => {
-    if (a/b == 0) {
-        console.log("Even Number");
-    } //else {
-       // console.log("Odd Number");
-   // }
+const checkEvenOrOdd = (a:number, b:number): string => {
+    if (a % b === 0) {
+        return "Even Number";
+    } else if(a % b === 1) {
+        return "Odd Number";
+    } else {
+        return "Wrong Input";
+    }
 }
-
-console.log(checkEvenOrOdd(5, 5));
+console.log(checkEvenOrOdd(8, 0));
 
 /**
  * - **Scenario 3: Calculate Area:**
@@ -33,7 +33,7 @@ console.log(checkEvenOrOdd(5, 5));
  */
 
 const calculateArea = (w:number, h:number) => {
-    let area: number = w * h
+    let area: number = w * h;
     return area;
 }
 console.log(calculateArea(5, 8));
@@ -46,9 +46,9 @@ console.log(calculateArea(5, 8));
  */
 
 const reverseString = (str:string) => {
-
+    return str.split("").reverse().join("");
 }
-console.log("Hello");
+console.log(reverseString("Testing"));
 
 /**
  * - **Scenario 5: Temperature Conversion:**

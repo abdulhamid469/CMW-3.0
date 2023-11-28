@@ -13,13 +13,17 @@ console.log(add(5, 6));
     - The function should take an integer as a parameter and return a string indicating whether the number is even or odd.
  */
 var checkEvenOrOdd = function (a, b) {
-    if (a / b == 0) {
-        console.log("Even Number");
-    } //else {
-    // console.log("Odd Number");
-    // }
+    if (a % b === 0) {
+        return "Even Number";
+    }
+    else if (a % b === 1) {
+        return "Odd Number";
+    }
+    else {
+        return "Wrong Input";
+    }
 };
-console.log(checkEvenOrOdd(5, 5));
+console.log(checkEvenOrOdd(8, 0));
 /**
  * - **Scenario 3: Calculate Area:**
     - Create a function **`calculateArea`** that calculates the area of a rectangle.
@@ -36,8 +40,9 @@ console.log(calculateArea(5, 8));
     - The function should take a string as a parameter and return the reversed string.
  */
 var reverseString = function (str) {
+    return str.split("").reverse().join("");
 };
-console.log("Hello");
+console.log(reverseString("Testing"));
 /**
  * - **Scenario 5: Temperature Conversion:**
     - Create a function **`convertCelsiusToFahrenheit`** that converts temperature from Celsius to Fahrenheit.
