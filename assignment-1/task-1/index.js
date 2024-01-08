@@ -24,16 +24,16 @@
  *               - First, ask the user for the preferred payment method (nested loop for payment options).
  *              - Display a confirmation message based on the payment method chosen.
  */
-// Define a function to simulate the electronic shopping scenario
-function simulateElectronicShopping() {
+// Define a function electronic shopping scenario
+function electronicShopping() {
     // Scenario 1 - Buying Electronic Devices
     console.log("Welcome to the electronics store!");
-    var totalBill = 0;
+    let totalBill = 0;
     console.log("Electronic devices section:");
     console.log("1. Laptop - $1000");
     console.log("2. Smartphone - $500");
     // Add more electronic device options and prices as needed
-    var selectedDevice = 1; // Assume the customer selects a laptop
+    let selectedDevice = 1; // Assume the customer selects a laptop
     if (selectedDevice === 1) {
         totalBill += 1000;
     }
@@ -45,7 +45,7 @@ function simulateElectronicShopping() {
     if (totalBill > 800) {
         console.log("Great choice! You qualify for a $50 discount.");
         totalBill -= 50; // Apply a $50 discount
-        console.log("Discounted total: $".concat(totalBill.toFixed(2)));
+        console.log(`Discounted total: $${totalBill.toFixed(2)}`);
     }
     else {
         console.log("No discount applied. Keep exploring for more deals!");
@@ -53,13 +53,13 @@ function simulateElectronicShopping() {
     // Scenario 3 - Checkout Process
     console.log("Checkout process:");
     // Simulate the payment method selection using nested loops
-    var validPaymentMethod = false;
+    let validPaymentMethod = false;
     while (!validPaymentMethod) {
         console.log("Choose a payment method:");
         console.log("1. Debit card");
         console.log("2. PayPal");
         // Add more payment options as needed
-        var selectedPaymentMethod = 1; // Assume the customer selects a debit card
+        let selectedPaymentMethod = 1; // Assume the customer selects a debit card
         switch (selectedPaymentMethod) {
             case 1:
                 console.log("You've chosen to pay with a debit card. Thank you!");
@@ -75,5 +75,6 @@ function simulateElectronicShopping() {
     }
     console.log("Thank you for shopping with us!");
 }
-// Call the function to simulate the electronic shopping scenario
-simulateElectronicShopping();
+// Call the function the electronic shopping scenario
+electronicShopping();
+export {};

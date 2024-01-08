@@ -2,15 +2,6 @@
  * Question 1
  * Install Node.js, TypeScript and VS Code on your computer.
  */
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
 /**
  * Nodejs Typscript and VS Code installed
  */
@@ -18,41 +9,41 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
  * Question 2
  * Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
  */
-var fullName = "Abdul Hamid";
-console.log("Hello this is ".concat(fullName));
+let fullName = "Abdul Hamid";
+console.log(`Hello this is ${fullName}`);
 /**
  * Question 3
  * Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
  */
-var studentName = "Sahil Khan";
+let studentName = "Sahil Khan";
 // Uppercase
 console.log(studentName.toUpperCase());
 // Lowercase
 console.log(studentName.toLowerCase());
 // Titlecase
-console.log("".concat(studentName.charAt(0).toUpperCase(), " ").concat(studentName.slice(1)));
+console.log(`${studentName.charAt(0).toUpperCase()} ${studentName.slice(1)}`);
 /**
  * Question 4
  * Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks:
  * Albert Einstein once said, “A person who never made a mistake never tried anything new.”
  */
 // Famous Quote by Albert Einstein
-var quote = "\"Success is Not Final, Failure is Not Fatal: it is the Courage to Continue that Counts\"";
-var authorName = "Winston Churchill";
-console.log("".concat(authorName, " said, ").concat(quote));
+const quote = `"Success is Not Final, Failure is Not Fatal: it is the Courage to Continue that Counts"`;
+const authorName = `Winston Churchill`;
+console.log(`${authorName} said, ${quote}`);
 /**
  * Question 5
  * Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
  */
-var famous_person = "Winston Churchill";
-var famous_quote = "\"Success is Not Final, Failure is Not Fatal: it is the Courage to Continue that Counts\"";
-var txt_message = "".concat(famous_person, " said, ").concat(famous_quote);
+let famous_person = `Winston Churchill`;
+let famous_quote = `"Success is Not Final, Failure is Not Fatal: it is the Courage to Continue that Counts"`;
+let txt_message = `${famous_person} said, ${famous_quote}`;
 console.log(txt_message);
 /**
  * Question 6
  * Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
  */
-var personName = "\t \t Abdul \n Hamid \t \t";
+const personName = "\t \t Abdul \n Hamid \t \t";
 console.log(personName);
 console.log(personName.trim());
 /**
@@ -80,50 +71,49 @@ console.log(2 + 6);
  * Question 9
  * Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
  */
-var favrtNum = "7";
-console.log("There are seven ".concat(favrtNum, " heaven and ").concat(favrtNum, " earth"));
+let favrtNum = `7`;
+console.log(`There are seven ${favrtNum} heaven and ${favrtNum} earth`);
 /**
  * Question 10
  * Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
  */
-var myName = "Abdul Hamid";
-console.log("Hello ".concat(fullName, ", would you like to learn some JavaScript Today?"));
+let myName = "Abdul Hamid";
+console.log(`Hello ${fullName}, would you like to learn some JavaScript Today?`);
 // Quote by Muhammad Ali
-var author_Name = "Muhammad Ali";
-var quoteMessage = "\"He Who is Not Courageous Enough to Take Risks Will Accomplish Nothing in Life\"";
-console.log("".concat(author_Name, " said, ").concat(quoteMessage));
+const author_Name = `Muhammad Ali`;
+const quoteMessage = `"He Who is Not Courageous Enough to Take Risks Will Accomplish Nothing in Life"`;
+console.log(`${author_Name} said, ${quoteMessage}`);
 /**
  * Question 11
  * Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
  */
-var frindNames = ["Shoaib", "Rasool", "Babar", "Zohaib", "Naseem"];
+let frindNames = ["Shoaib", "Rasool", "Babar", "Zohaib", "Naseem"];
 console.log(frindNames[0], frindNames[1], frindNames[2], frindNames[3], frindNames[4]);
 /**
  * Question 12
  * Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
  */
-var otherFriends = ["Zahoor", "Yawar", "Wasih", "Haseeb", "Zayan"];
-for (var _i = 0, otherFriends_1 = otherFriends; _i < otherFriends_1.length; _i++) {
-    var otherName = otherFriends_1[_i];
-    console.log("".concat(otherName, " is my good friends"));
+let otherFriends = ["Zahoor", "Yawar", "Wasih", "Haseeb", "Zayan"];
+for (let otherName of otherFriends) {
+    console.log(`${otherName} is my good friends`);
 }
 /**
  * Question 13
  * Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
  */
-var myTransportCars = ["Motercyle", "Bus"];
-var myTransportMessage = ["go to office", "go to home"];
-for (var i in myTransportCars) {
-    console.log("".concat(myTransportCars[i], " ").concat(myTransportMessage[i]));
+let myTransportCars = ["Motercyle", "Bus"];
+let myTransportMessage = ["go to office", "go to home"];
+for (let i in myTransportCars) {
+    console.log(`${myTransportCars[i]} ${myTransportMessage[i]}`);
 }
 ;
 /**
  * Question 14
  * Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
  */
-var invitedGuest = ["Zahoor", "Noman", "Safi", "Hamid", "Rabi"];
-invitedGuest.forEach(function (gName) {
-    console.log("Hi ".concat(gName, " I would like invite you tommarow for dinner"));
+let invitedGuest = ["Zahoor", "Noman", "Safi", "Hamid", "Rabi"];
+invitedGuest.forEach(gName => {
+    console.log(`Hi ${gName} I would like invite you tommarow for dinner`);
 });
 /**
  * Question 15
@@ -176,23 +166,23 @@ invitedGuest.forEach(function (gName) {
  * Question 20
  * Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
  */
-var proLanges = ["JavaScript", "Python", "Java", "C++", "TypeScript", "Ruby", "Swift"];
-proLanges.forEach(function (language) {
+let proLanges = ["JavaScript", "Python", "Java", "C++", "TypeScript", "Ruby", "Swift"];
+proLanges.forEach(language => {
     console.log(language);
 });
 /**
  * Question 21
  * They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
  */
-var cars = [
+let cars = [
     { brand: "Toyota", model: "Camry", year: 2022 },
     { brand: "Honda", model: "Civic", year: 2021 },
     { brand: "Ford", model: "Mustang", year: 2023 },
     { brand: "Chevrolet", model: "Silverado", year: 2020 }
 ];
 console.log("Information about Cars:");
-cars.forEach(function (car) {
-    console.log("Brand: ".concat(car.brand, ", Model: ").concat(car.model, ", Year: ").concat(car.year));
+cars.forEach(car => {
+    console.log(`Brand: ${car.brand}, Model: ${car.model}, Year: ${car.year}`);
 });
 /**
  * Question 22
@@ -211,24 +201,24 @@ console.log("Corrected Output:", proLanges[2]);
  * • Look closely at your results, and make sure you understand why each line evaluates to True or False.
  * • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
  */
-var number = 7;
+let number = 7;
 // Test 1: Equality
-console.log("Is number equal to 7? I predict True.");
+console.log(`Is number equal to 7? I predict True.`);
 console.log(number == 7);
 // Test 2: Inequality
-console.log("Is number not equal to 10? I predict True.");
+console.log(`Is number not equal to 10? I predict True.`);
 console.log(number != 10);
 // Test 3: Greater than
-console.log("Is number greater than 5? I predict True.");
+console.log(`Is number greater than 5? I predict True.`);
 console.log(number > 5);
 // Test 4: Less than
-console.log("Is number less than 10? I predict True.");
+console.log(`Is number less than 10? I predict True.`);
 console.log(number < 10);
 // Test 5: Greater than or equal to
-console.log("Is number greater than or equal to 7? I predict True.");
+console.log(`Is number greater than or equal to 7? I predict True.`);
 console.log(number >= 7);
 // Test 6: Less than or equal to
-console.log("Is number less than or equal to 7? I predict True.");
+console.log(`Is number less than or equal to 7? I predict True.`);
 console.log(number <= 7);
 /**
  * Question 24
@@ -241,39 +231,39 @@ console.log(number <= 7);
  * • Test whether an item is not in a array
  */
 // Tests for equality and inequality with strings
-var fruit = 'apple';
-console.log("Is fruit equal to 'apple'? I predict True.");
+let fruit = 'apple';
+console.log(`Is fruit equal to 'apple'? I predict True.`);
 console.log(fruit == 'apple');
-console.log("Is fruit not equal to 'orange'? I predict True.");
+console.log(`Is fruit not equal to 'orange'? I predict True.`);
 console.log(fruit != 'orange');
 // Tests using the lower case function
-var city = 'New York';
-console.log("Is the lowercase of city equal to 'new york'? I predict True.");
+let city = 'New York';
+console.log(`Is the lowercase of city equal to 'new york'? I predict True.`);
 console.log(city.toLowerCase() == 'new york');
 // Numerical tests
-var numberA = 10;
-var numberB = 5;
-console.log("Is numberA equal to numberB? I predict False.");
+let numberA = 10;
+let numberB = 5;
+console.log(`Is numberA equal to numberB? I predict False.`);
 console.log(numberA == numberB);
-console.log("Is numberA not equal to numberB? I predict True.");
+console.log(`Is numberA not equal to numberB? I predict True.`);
 console.log(numberA != numberB);
-console.log("Is numberA greater than numberB? I predict True.");
+console.log(`Is numberA greater than numberB? I predict True.`);
 console.log(numberA > numberB);
-console.log("Is numberA less than or equal to numberB? I predict False.");
+console.log(`Is numberA less than or equal to numberB? I predict False.`);
 console.log(numberA <= numberB);
 // Tests using "and" and "or" operators
-var x = 8;
-var y = 12;
-console.log("Is x greater than 5 and y less than 10? I predict True.");
+let x = 8;
+let y = 12;
+console.log(`Is x greater than 5 and y less than 10? I predict True.`);
 console.log(x > 5 && y < 10);
-console.log("Is x greater than 10 or y less than 5? I predict False.");
+console.log(`Is x greater than 10 or y less than 5? I predict False.`);
 console.log(x > 10 || y < 5);
 // Test whether an item is in an array
-var fruits = ['apple', 'banana', 'orange'];
-console.log("Is 'banana' in the fruits array? I predict True.");
+let fruits = ['apple', 'banana', 'orange'];
+console.log(`Is 'banana' in the fruits array? I predict True.`);
 console.log(fruits.includes('banana'));
 // Test whether an item is not in an array
-console.log("Is 'grape' not in the fruits array? I predict True.");
+console.log(`Is 'grape' not in the fruits array? I predict True.`);
 console.log(!fruits.includes('grape'));
 /**
  * Question 25
@@ -281,7 +271,7 @@ console.log(!fruits.includes('grape'));
  * • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
  * • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
  */
-var alien_color = "green";
+let alien_color = "green";
 if (alien_color === "green") {
     console.log("The player just earned 5 points.");
 }
@@ -306,9 +296,9 @@ else {
  * • If the alien is red, print a message that the player earned 15 points.
  * • Write three versions of this program, making sure each message is printed for the appropriate color alien.
  */
-var alien_color1 = "green";
-var alien_color2 = "yellow";
-var alien_color3 = "red";
+let alien_color1 = "green";
+let alien_color2 = "yellow";
+let alien_color3 = "red";
 if (alien_color1 === "green") {
     console.log("The player just earn 5 points");
     if (alien_color2 === 'yellow') {
@@ -329,7 +319,7 @@ if (alien_color1 === "green") {
  * • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
  * • If the person is age 65 or older, print a message that the person is an elder.
  */
-var age = 18;
+let age = 18;
 if (age < 2) {
     console.log("The person is a baby");
 }
@@ -377,17 +367,17 @@ if (favorite_fruits.includes("Apple")) {
  * • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
  * • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
  */
-var usersType = ["admin", "user2", "user3", "user4", "user5"];
-usersType.forEach(function (usersType) {
+let usersType = ["admin", "user2", "user3", "user4", "user5"];
+usersType.forEach((usersType) => {
     if (usersType === "admin") {
-        console.log("Hello ".concat(usersType, ", would you like to see a status report?"));
+        console.log(`Hello ${usersType}, would you like to see a status report?`);
     }
     else {
-        console.log("Hello ".concat(usersType, ", thank you for logging in again"));
+        console.log(`Hello ${usersType}, thank you for logging in again`);
     }
 });
 if (!usersType.length) {
-    console.log("We need to find some users!");
+    console.log(`We need to find some users!`);
 }
 ;
 /**
@@ -396,7 +386,7 @@ if (!usersType.length) {
  * • If the list is empty, print the message We need to find some users!
  * • Remove all of the usernames from your array, and make sure the correct message is printed.
  */
-var users = ["Zahoor", "Yawar", "Wasih", "Haseeb", "Zayan"];
+let users = ["Zahoor", "Yawar", "Wasih", "Haseeb", "Zayan"];
 while (users.length > 0) {
     users.pop();
 }
@@ -413,9 +403,9 @@ if (users.length == 0) {
  * • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
  * • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
  */
-var current_users = ["admin", "user2", "user3", "user4", "user5"];
-var new_users = ["user6", "user3", "user8", "user9"];
-new_users.forEach(function (user) {
+let current_users = ["admin", "user2", "user3", "user4", "user5"];
+let new_users = ["user6", "user3", "user8", "user9"];
+new_users.forEach((user) => {
     current_users.includes(user.toLowerCase()) ?
         console.log("the person will need to enter a new username") :
         console.log("the username is available");
@@ -427,19 +417,19 @@ new_users.forEach(function (user) {
  * • Loop through the array.
  * • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
  */
-var ordinalNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-ordinalNumbers.forEach(function (num) {
+let ordinalNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+ordinalNumbers.forEach(num => {
     if (num === 1) {
-        console.log("".concat(num, "st"));
+        console.log(`${num}st`);
     }
     else if (num === 2) {
-        console.log("".concat(num, "nd"));
+        console.log(`${num}nd`);
     }
     else if (num === 1) {
-        console.log("".concat(num, "rd"));
+        console.log(`${num}rd`);
     }
     else {
-        console.log("".concat(num, "th"));
+        console.log(`${num}th`);
     }
 });
 /**
@@ -448,29 +438,28 @@ ordinalNumbers.forEach(function (num) {
  * • Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
  * • Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
  */
-var pizzaFlavorsName = ["Veggie Pizza", "Pepperoni Pizza", "Meat Pizza", "Chicken Pizza"];
-pizzaFlavorsName.forEach(function (favorite) {
-    console.log("I like these ".concat(favorite));
+let pizzaFlavorsName = ["Veggie Pizza", "Pepperoni Pizza", "Meat Pizza", "Chicken Pizza"];
+pizzaFlavorsName.forEach((favorite) => {
+    console.log(`I like these ${favorite}`);
 });
-console.log("When it first when i come to islamabad I did't like Pizza but is time go now i like it very much. \n It is fast food \n Mostly I eat with friends");
-console.log("I really love pizza!");
+console.log(`When it first when i come to islamabad I did't like Pizza but is time go now i like it very much. \n It is fast food \n Mostly I eat with friends`);
+console.log(`I really love pizza!`);
 /**
  * Question 35
  * Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, such as A dog would make a great pet.
  * • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
  */
-var animalNames = ["dog", "cat", "parrot"];
-for (var _a = 0, animalNames_1 = animalNames; _a < animalNames_1.length; _a++) {
-    var animal = animalNames_1[_a];
-    console.log("A ".concat(animal, " would make a great pet"));
+let animalNames = ["dog", "cat", "parrot"];
+for (let animal of animalNames) {
+    console.log(`A ${animal} would make a great pet`);
 }
-console.log("".concat(animalNames.join(", "), " would make a great pet"));
+console.log(`${animalNames.join(", ")} would make a great pet`);
 /**
  * question 36
  * T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
  */
 function make_shirt(size, text) {
-    console.log("The size of the shirt is ".concat(size, " and printed text is ").concat(text));
+    console.log(`The size of the shirt is ${size} and printed text is ${text}`);
 }
 make_shirt(42, "Rocks");
 /**
@@ -478,10 +467,8 @@ make_shirt(42, "Rocks");
  * Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
  * => Note: I use little diffrent name
  */
-function make_shirt2(size, text) {
-    if (size === void 0) { size = 42; }
-    if (text === void 0) { text = "I love JavaScript"; }
-    console.log("The size of the shirt is ".concat(size, " and printed text is ").concat(text));
+function make_shirt2(size = 42, text = "I love JavaScript") {
+    console.log(`The size of the shirt is ${size} and printed text is ${text}`);
 }
 make_shirt2();
 make_shirt2(45);
@@ -491,9 +478,8 @@ make_shirt2(30, "I love aws");
  * Question 38
  * Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
  */
-function describe_city(cityNames, countryNames) {
-    if (countryNames === void 0) { countryNames = "Pakistan"; }
-    console.log("".concat(cityNames, " is in ").concat(countryNames));
+function describe_city(cityNames, countryNames = "Pakistan") {
+    console.log(`${cityNames} is in ${countryNames}`);
 }
 describe_city("Peshawar");
 describe_city("Kabul", "Afghanistan");
@@ -504,9 +490,8 @@ describe_city("Karachi");
  * "Lahore, Pakistan"
  * Call your function with at least three city-country pairs, and print the value that’s returned.
  */
-function city_country(cityNames, countryNames) {
-    if (countryNames === void 0) { countryNames = "Pakistan"; }
-    console.log("".concat(cityNames, ", ").concat(countryNames));
+function city_country(cityNames, countryNames = "Pakistan") {
+    console.log(`${cityNames}, ${countryNames}`);
 }
 city_country("Peshawar");
 city_country("Kabul", "Afghanistan");
@@ -517,9 +502,9 @@ city_country("Karachi");
  */
 function make_album(artistName, albumTitle, tracksName) {
     return {
-        artistName: artistName,
-        albumTitle: albumTitle,
-        tracksName: tracksName
+        artistName,
+        albumTitle,
+        tracksName
     };
 }
 console.log(make_album("artist1", "album1", 5));
@@ -529,9 +514,9 @@ console.log(make_album("artist3", "album3", 3));
  * Question 41
  * Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
  */
-var magiciansNames = ["Harry Houdini", "David Copperfield", "Criss Angel", "David Blaine", "Derren Brown"];
+let magiciansNames = ["Harry Houdini", "David Copperfield", "Criss Angel", "David Blaine", "Derren Brown"];
 function show_magicians(magicians) {
-    magicians.forEach(function (mag) {
+    magicians.forEach((mag) => {
         console.log(mag);
     });
 }
@@ -540,10 +525,10 @@ show_magicians(magiciansNames);
  * Question 42
  * Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
  */
-var magiciansNames1 = ["sank", "fran", "tim", "jack"];
+let magiciansNames1 = ["sank", "fran", "tim", "jack"];
 function make_great(magicians) {
-    magicians.forEach(function (mag, i) {
-        magiciansNames[i] = "The great ".concat(mag);
+    magicians.forEach((mag, i) => {
+        magiciansNames[i] = `The great ${mag}`;
     });
     return magiciansNames1;
 }
@@ -552,52 +537,48 @@ console.log(make_great(magiciansNames1));
  * Question 43
  * Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
  */
-var magiciansNames2 = ["jack", "tim", "cook", "sam"];
+let magiciansNames2 = ["jack", "tim", "cook", "sam"];
 function show_magicians2(magicians) {
-    magicians.forEach(function (mag) {
+    magicians.forEach((mag) => {
         console.log(mag);
     });
 }
 // show ooriginal arr
 show_magicians2(magiciansNames2);
 function make_great2(magicians) {
-    var arr = [];
-    magicians.map(function (mag, i) {
-        arr.push("The great ".concat(mag));
+    let arr = [];
+    magicians.map((mag, i) => {
+        arr.push(`The great ${mag}`);
     });
     return arr;
 }
-var TransformedMagiciansNames = make_great2(magiciansNames2);
+const TransformedMagiciansNames = make_great2(magiciansNames2);
 console.log(TransformedMagiciansNames);
 console.log(magiciansNames2);
 /**
  * Question 44
  * Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
  */
-var itemNames = ["Potao", "cheese", "kabab"];
-function getSummary() {
-    var itemNames = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        itemNames[_i] = arguments[_i];
-    }
+let itemNames = ["Potao", "cheese", "kabab"];
+function getSummary(...itemNames) {
     console.log("Summary: " + itemNames.join(", "));
 }
-getSummary.apply(void 0, itemNames);
-getSummary.apply(void 0, __spreadArray(__spreadArray([], itemNames, false), ["souce"], false));
-getSummary.apply(void 0, __spreadArray(__spreadArray([], itemNames, false), ["souce", "chili"], false));
+getSummary(...itemNames);
+getSummary(...itemNames, "souce");
+getSummary(...itemNames, "souce", "chili");
 /**
  * Question 45
  * Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
  */
-var itemsName2 = ["tomato", "cheese", "kabab"];
-function getCar(manufacturer, model, keywords, color, feature) {
-    if (feature === void 0) { feature = "automatic"; }
+let itemsName2 = ["tomato", "cheese", "kabab"];
+function getCar(manufacturer, model, keywords, color, feature = "automatic") {
     return {
-        manufacturer: manufacturer,
-        model: model,
-        color: color,
-        feature: feature,
-        keywords: keywords
+        manufacturer,
+        model,
+        color,
+        feature,
+        keywords
     };
 }
 console.log(getCar("honda", 2022, ["black", "fast"], "black", "automatic"));
+export {};

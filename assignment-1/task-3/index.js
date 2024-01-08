@@ -7,7 +7,7 @@
         - **`shift`**: Remove the first element from the array.
         - **`unshift`**: Add new elements to the beginning of the array.
  */
-var listFruits = ["Apple", "Banana", "Mango"];
+let listFruits = ["Apple", "Banana", "Mango"];
 // Add last element in Fruits list
 listFruits.push("Orange");
 console.log(listFruits);
@@ -26,9 +26,12 @@ console.log(listFruits);
         - **`splice`**: Create a subarray by removing elements from the original array.
         - **`slice`**: Create a subarray without modifying the original array.
  */
-var animals = ["Cat", "Loins", "House", "Dog"];
+// Splice
+const animals = ["Cat", "Loins", "House", "Dog"];
 animals.splice(1, 0, "Rabbit");
 console.log(animals);
-var countries = ["Pakistan", "Afghanistan", "Iran", "Turky"];
-var ourSideCountry = countries.slice(3, 4);
+// Slice
+const countries = ["Pakistan", "Afghanistan", "Iran", "Turky"];
+const ourSideCountry = countries.slice(3, 4);
 console.log(ourSideCountry);
+export {};

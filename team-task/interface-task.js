@@ -1,9 +1,9 @@
-var simpleBook = {
+const simpleBook = {
     title: "The JavaScript Guid",
     author: "Jane Doe",
     publishedYear: 2022
 };
-var extendedBook = {
+const extendedBook = {
     title: "The JavaScript Guid",
     author: "Jane Doe",
     publishedYear: 2022,
@@ -11,3 +11,4 @@ var extendedBook = {
 };
 console.log(simpleBook);
 console.log(extendedBook);
+export {};
